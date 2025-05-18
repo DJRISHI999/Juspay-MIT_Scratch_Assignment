@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Juspay MIT Scratch Clone (Assignment 2)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Live Project Dashboard:** [View on Vercel](https://juspay-mit-scratch-assignment.vercel.app/)
+**Project Demo Video:** [Watch on Google Drive](https://drive.google.com/file/d/1NE5P9Co547mMWcRaBPlYUX_YuWaqRzia/view?usp=sharing)
+*(You can find the deployed application link through the Vercel dashboard. If you have a direct `.vercel.app` link, please update it here.)*
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+This project is an MIT Scratch clone developed as part of the Juspay second-round assignment. It allows users to create simple animations and interactions by adding sprites (Goku and Freeza) and programming them with motion and looks blocks. A special "Hero Feature" allows for script swapping between sprites upon collision.
 
-### `npm start`
+## Getting Started (Local Development)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this project locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1.  **Clone the repository:**
+    ```bash
+    git clone <your-repository-url>
+    ```
+    *(Replace `<your-repository-url>` with the actual URL of your Git repository if you have one.)*
 
-### `npm test`
+2.  **Navigate to the project directory:**
+    ```bash
+    cd MIT_Scratch_juspay
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-### `npm run build`
+4.  **Run the application:**
+    ```bash
+    npm start
+    ```
+    This will run the app in development mode.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5.  Open [http://localhost:3000](http://localhost:3000) in your browser to view it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Use the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Adding Sprites
+*   Locate the **"+" (Add)** button on the top bar.
+*   Clicking it will reveal available sprites: **Freeza** and **Goku**.
+*   Click on a sprite's image to add it to the canvas.
+*   You can add a maximum of **two sprites**. Adding two sprites is necessary to experience the "Hero Feature" (detailed below).
 
-### `npm run eject`
+### 2. Selecting a Sprite for Scripting
+*   Once sprites are added, they appear in the **Sprite Bar** (below the header, above the canvas).
+*   Click on a sprite in this bar to select it. The selected sprite will be highlighted.
+*   The **Script Area** on the right side of the screen will now display the scripts for the selected sprite. If no sprite is selected, or if the selected sprite has no scripts, this area will be empty or show a placeholder.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Building Scripts
+*   Ensure the sprite you want to program is selected (see step 2).
+*   On the left sidebar, you'll find block categories like **"Motion"** and **"Looks"**. Click a category to see its blocks.
+*   To give functionality to the selected sprite, **drag a block** from the sidebar and **drop it** into that sprite's Script Area on the right.
+*   Blocks can be arranged in sequence to form a script. They will snap together.
+*   Many blocks have input fields (e.g., for movement distance, duration, or text). Click these fields to type in your desired values.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Controlling Animations
+*   **Play:** After building scripts, click the **Play button** (▶️ icon, located below the canvas and script area) to start the animations for all sprites.
+*   **Pause/Resume:** While animations are playing, the Play button will change to a **Pause button** (⏸️ icon). Click it to pause the animations. Click it again (it will revert to a Play icon) to resume.
+*   **Reset:** Click the **Reset button** (🔄 icon) to stop all animations, return sprites to their original starting positions and states, and turn off the Hero Feature if it was enabled.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 5. Hero Feature (Collision & Script Swapping)
+*   This feature requires **two sprites** to be on the canvas.
+*   Find the **"Hero Feature" checkbox** located near the Play/Reset buttons.
+*   **Enable** this checkbox to activate the collision mechanism.
+*   When the Hero Feature is active and two sprites collide while their scripts are running:
+    *   The scripts of the two colliding sprites will be **swapped**. (Sprite 1 gets Sprite 2's script, and Sprite 2 gets Sprite 1's script).
+    *   The newly assigned scripts will then begin to execute on their respective sprites after a brief delay.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This README was generated based on project understanding and user input.
