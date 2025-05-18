@@ -1,8 +1,9 @@
 # Juspay MIT Scratch Clone (Assignment 2)
 
-**Live Project Dashboard:** [View on Vercel](https://juspay-mit-scratch-assignment.vercel.app/)
+**Live Project Dashboard:** https://juspay-mit-scratch-assignment.vercel.app/
+
 **Project Demo Video:** [Watch on Google Drive](https://drive.google.com/file/d/1NE5P9Co547mMWcRaBPlYUX_YuWaqRzia/view?usp=sharing)
-*(You can find the deployed application link through the Vercel dashboard. If you have a direct `.vercel.app` link, please update it here.)*
+
 
 ## Project Description
 
